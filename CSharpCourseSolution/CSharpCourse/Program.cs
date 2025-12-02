@@ -60,7 +60,7 @@ namespace CShaprCourse
             profileWeight = double.Parse(Console.ReadLine());
             Console.WriteLine("What is your Height in m?");
             profileHeight = double.Parse(Console.ReadLine());
-            bodyMassIndex = profileWeight / profileHeight * profileHeight;
+            bodyMassIndex = profileWeight / (profileHeight * profileHeight);
 
             Console.WriteLine($"Your Profile:\nFull Name: {profileFirstName} {profileLastName}\nAge: {profileAge}\nWeight: {profileWeight}\nHeight: {profileHeight}\nBody Mass Index: {bodyMassIndex}");
 
