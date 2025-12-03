@@ -8,6 +8,13 @@ namespace CShaprCourse
     {
         static void Main(string[] args) //void --> function doesn't return any value
         {
+            
+
+
+        }
+
+        static void HomeWork1()
+        {
             // Fitst Point of Home Work
             Console.WriteLine("Hi whats your name");
             string name = Console.ReadLine();
@@ -29,7 +36,7 @@ namespace CShaprCourse
             d = int.Parse(Console.ReadLine());
             string dLength = d.ToString();
             Console.WriteLine(dLength.Length);
-            
+
             // Heron's Formula
             Console.WriteLine("Please Enter sides of a triangle");
             Console.WriteLine("Side A");
@@ -64,9 +71,8 @@ namespace CShaprCourse
 
             Console.WriteLine($"Your Profile:\nFull Name: {profileFirstName} {profileLastName}\nAge: {profileAge}\nWeight: {profileWeight}\nHeight: {profileHeight}\nBody Mass Index: {bodyMassIndex}");
 
-
-
         }
+
 
         static void DateTimeDemo()
         {

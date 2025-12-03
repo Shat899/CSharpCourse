@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="CSharpCourse/CSharpCourse.csproj" />
+  <Project Path="B_ControlFlow/B_ControlFlow.csproj" Id="9cc581f9-c919-46a3-859b-ece423d7497e" />
+  <Project Path="CSharpCourse/A_CSharpCourse.csproj" />
 </Solution>
