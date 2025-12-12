@@ -15,36 +15,9 @@ namespace CShaprCourse
         static void HowmeWork2() //void --> function doesn't return any value
         {
 
-            /*First two numbers - units. All subsequent numbers are calculated as the sum of the previous two
-              Task: ask the user how many Fibonacci numbers he wants to generate (calculate), and actually generate
-              (calculate). In the generation process, write the numbers to the array. After generation, 
-              display the calculated numbers.*/
-
-            int counter = new int();
-            Console.WriteLine("Enter the number of Fibonacci numbers");
-            counter = int.Parse(Console.ReadLine());
-            int[] numbers = new int[2 + counter];
-            numbers[0] = 1;
-            numbers[1] = 1;
-
-            for (int i = 1; i <= counter; i++)
-            {
-                numbers[i + 1] = numbers[i - 1] + numbers[i];
-            }
-
-
-            foreach (var val in numbers)
-            {
-                Console.Write(val + " ");
-            }
-
-            Console.ReadLine();
-
-
             /* Prompt the user for up to 10 positive integers. The user can stop accepting numbers by entering 0.
                After the user stops accepting integers (this happens if 10 numbers have been entered, or if the user 
-               enters 0 to avoid entering all 10), calculate the average of positive integers that are multiples of three
-               and display it on the console.*/
+               enters 0 to avoid entering all 10), calculate the and display it on the console.*/
             bool exit = false;
             int[] averageNumbers = new int[10];
             int average = new int();
@@ -87,7 +60,7 @@ namespace CShaprCourse
                 factorial *= i;  // means: x = x * y
             }
 
-            Console.WriteLine($"Factorial{factorial} fro {nFactorial}");
+            Console.WriteLine($"Factorial{factorial} for {nFactorial}");
 
 
             /*Let's assume the login/password for logging in is johnsilver/qwerty.Prompt the user for their login and password. Give the user only three attempts to enter the correct login/password pair. 
