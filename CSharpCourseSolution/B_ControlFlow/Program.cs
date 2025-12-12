@@ -16,9 +16,9 @@ namespace CShaprCourse
         {
 
             /*First two numbers - units. All subsequent numbers are calculated as the sum of the previous two
- Task: ask the user how many Fibonacci numbers he wants to generate (calculate), and actually generate
- (calculate). In the generation process, write the numbers to the array. After generation, 
- display the calculated numbers.*/
+              Task: ask the user how many Fibonacci numbers he wants to generate (calculate), and actually generate
+              (calculate). In the generation process, write the numbers to the array. After generation, 
+              display the calculated numbers.*/
 
             int counter = new int();
             Console.WriteLine("Enter the number of Fibonacci numbers");
