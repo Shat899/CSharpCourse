@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Metrics;
 using System.Text;
 using System.Threading.Channels;
 using static System.Net.Mime.MediaTypeNames;
@@ -10,14 +11,18 @@ namespace CShaprCourse
         static void Main(string[] args) //void --> function doesn't return any value
         {
 
+        }
+        static void HowmeWork2() //void --> function doesn't return any value
+        {
+
             /*First two numbers - units. All subsequent numbers are calculated as the sum of the previous two
-            Task: ask the user how many Fibonacci numbers he wants to generate (calculate), and actually generate
-            (calculate). In the generation process, write the numbers to the array. After generation, 
-            display the calculated numbers.*/
+ Task: ask the user how many Fibonacci numbers he wants to generate (calculate), and actually generate
+ (calculate). In the generation process, write the numbers to the array. After generation, 
+ display the calculated numbers.*/
 
             int counter = new int();
             Console.WriteLine("Enter the number of Fibonacci numbers");
-            counter = int.Parse(Console.ReadLine()); 
+            counter = int.Parse(Console.ReadLine());
             int[] numbers = new int[2 + counter];
             numbers[0] = 1;
             numbers[1] = 1;
@@ -26,7 +31,7 @@ namespace CShaprCourse
             {
                 numbers[i + 1] = numbers[i - 1] + numbers[i];
             }
-            
+
 
             foreach (var val in numbers)
             {
@@ -64,8 +69,66 @@ namespace CShaprCourse
                     break;
                 }
             }
+
+
+            /*The factorial of a number is the product of that number and all the numbers preceding it (except 0).
+              In mathematics, a factorial is written with an exclamation point. 
+              For example, 5! = 5 * 4 * 3 * 2 * 1 = 120. Special cases: 0! = 1. 1! = 1.
+
+              Problem: Prompt the user for the number whose factorial needs to be calculated and perform the calculation. 
+              Then display the result. There's no need to prompt for an exclamation point; besides, there's no such operation in C#. 
+              To calculate a factorial, multiplication is required.*/
+            Console.WriteLine("Insert number for factorial");
+            int nFactorial = int.Parse(Console.ReadLine());
+            int factorial = 1;
+
+            for (int i = 2; i <= nFactorial; i++)
+            {
+                factorial *= i;  // means: x = x * y
+            }
+
+            Console.WriteLine($"Factorial{factorial} fro {nFactorial}");
+
+
+            /*Let's assume the login/password for logging in is johnsilver/qwerty.Prompt the user for their login and password. Give the user only three attempts to enter the correct login/password pair. 
+             * If the user enters the correct password, print "Enter the System" to the console and stop prompting for the login/password. If the user makes three incorrect attempts, print "The number of 
+             * available tries has been exceeded" and stop prompting for the login/password pair.*/
+
+            int atemps = 3;
+            string logIn = string.Empty;
+            string password = string.Empty;
+            string[] credentials = { "johnsilver", "qwerty" };
+            bool islogIn = false;
+
+            for (int i = 0; i < atemps; i++)
+            {
+
+                Console.WriteLine("Enter login: ");
+                logIn = Console.ReadLine();
+                Console.WriteLine("Enter password: ");
+                password = Console.ReadLine();
+
+                if (logIn == credentials[0] && password == credentials[1])
+                {
+                    islogIn = true;
+                    break;
+
+                }
+
+            }
+
+            if (islogIn)
+            {
+                Console.WriteLine("Welcome to the system");
+            }
+            else
+            {
+                Console.WriteLine("The number of available tries have been exceeded");
+            }
+
         }
-        static void HomeWork2() //void --> function doesn't return any value
+
+        static void CyclesAndSwich() //void --> function doesn't return any value
         {
             int[] numbers = { 1, -2, 4, -7, 5, 3, 2, -1, -3, 2, 7, -1, -3, 1, 7 };
 
@@ -260,7 +323,7 @@ namespace CShaprCourse
                                                $"Second number {secondNumber} is begger then first Number {firstNumber}";
          Console.WriteLine(result);
         }
-        static void  ControlFlowDeom() //void --> function doesn't return any value
+        static void ControlFlowDeom() //void --> function doesn't return any value
         {
 
             int profileAge = new int();
