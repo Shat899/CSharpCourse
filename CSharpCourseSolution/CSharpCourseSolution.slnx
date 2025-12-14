@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="B_ControlFlow/B_ControlFlow.csproj" Id="9cc581f9-c919-46a3-859b-ece423d7497e" />
   <Project Path="CSharpCourse/A_CSharpCourse.csproj" />
+  <Project Path="C_ArraysCollections/C_ArraysCollections.csproj" Id="54151dce-73e1-4fc8-9bcd-7ace9ffc9bc2" />
 </Solution>

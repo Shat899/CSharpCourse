@@ -8,8 +8,6 @@ namespace CShaprCourse
     {
         static void Main(string[] args) //void --> function doesn't return any value
         {
-            
-
 
         }
 
