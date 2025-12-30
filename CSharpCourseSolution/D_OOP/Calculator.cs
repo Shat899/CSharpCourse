@@ -47,5 +47,15 @@ namespace D_OOP
             return sum / numbers.Length;
         }
 
+        public bool TryDivide(double divisible, double divisor, out double resault) // create a method with out parameter
+        {
+            resault = 0;
+            if (divisor == 0)
+            {
+                return false;
+            }
+            resault = divisible / divisor;
+            return true;
+        }
     }
 }

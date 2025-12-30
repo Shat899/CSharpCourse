@@ -15,6 +15,9 @@ namespace D_OOP
             double area1 = Calc.CalcTriangleSquareby(ab:3, bc:4, ac:5);        // Call the method with named arguments
             double average1 = Calc.Average1(new int[] { 10, 20, 30, 40, 50 }); // Call the Average method where we pass an array of integers
             double average2 = Calc.Average2(10, 20, 30, 40, 50);               // Call the Average method where we pass a variable number of integer arguments
+            bool tryDivideResult = Calc.TryDivide(10, 2, out double resault); // Call the TryDivide method with out parameter
+            Console.WriteLine(tryDivideResult); // Print whether the division was successful
+            Console.WriteLine(resault); // Print the result of the division
         }
 
 
