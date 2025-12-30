@@ -19,5 +19,12 @@ namespace D_OOP
         {
             return 0.5 * b * h;
         }
+
+        public double CalcTriangleSquare(double ab, double ac, int alpha)             // method returns doble value, and cames with two parameters
+        {
+            double radians = (Math.PI / 180) * alpha;
+            return 0.5 * ab * ac * Math.Sin(radians);
+        }
+
     }
 }
