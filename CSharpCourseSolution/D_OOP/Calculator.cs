@@ -26,5 +26,26 @@ namespace D_OOP
             return 0.5 * ab * ac * Math.Sin(radians);
         }
 
+        public double Average1(int[] numbers) // create a method that calculates the average of an array of integers
+        {
+            double sum = 0;
+            foreach (int n in numbers)
+            {
+                sum += n;
+            }  
+
+            return sum / numbers.Length;
+        }
+        public double Average2(params int[] numbers) // create a method that calculates the average of an array of integers with params keyword
+        {
+            double sum = 0;
+            foreach (int n in numbers)
+            {
+                sum += n;
+            }
+
+            return sum / numbers.Length;
+        }
+
     }
 }
