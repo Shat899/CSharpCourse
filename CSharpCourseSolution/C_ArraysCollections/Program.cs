@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CShaprCourse
+namespace C_ArraysCollections
 {
     class Program
     {

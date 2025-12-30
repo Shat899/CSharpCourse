@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Text;
 using System.Threading.Channels;
+using D_OOP; // Importing the D_OOP namespace to use Character class
 
-namespace CShaprCourse
+namespace A_CSharpCourse
 {
     class Program
     {
         static void Main(string[] args) //void --> function doesn't return any value
         {
-
+            Character b = new Character(); // Create an instance of Character class "exmplare"
+            b.Hit(15);
+            Console.WriteLine(b.Health); // Accessing the Health property of the Character instance
         }
 
         static void HomeWork1()

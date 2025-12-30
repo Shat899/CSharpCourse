@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Channels;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace CShaprCourse
+namespace B_ControlFlow
 {
     class Program
     {
