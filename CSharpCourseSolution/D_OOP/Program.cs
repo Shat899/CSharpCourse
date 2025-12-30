@@ -12,6 +12,7 @@ namespace D_OOP
             //Console.WriteLine(c.Health);   // Print the current health of the character with property
 
             Calculator Calc = new Calculator();
+            double area1 = Calc.CalcTriangleSquareby(ab:3, bc:4, ac:5);        // Call the method with named arguments
             double average1 = Calc.Average1(new int[] { 10, 20, 30, 40, 50 }); // Call the Average method where we pass an array of integers
             double average2 = Calc.Average2(10, 20, 30, 40, 50);               // Call the Average method where we pass a variable number of integer arguments
         }
