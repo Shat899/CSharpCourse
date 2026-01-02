@@ -36,8 +36,8 @@ namespace D_OOP
 
             return sum / numbers.Length;
         }
-        public double Average2(params int[] numbers) // create a method that calculates the average of an array of integers with params keyword
-        {
+        public static double Average2(params int[] numbers) // create a method that calculates the average of an array of integers with params keyword 
+        {                                                   //static - we can call this method without creating an instance of the class
             double sum = 0;
             foreach (int n in numbers)
             {

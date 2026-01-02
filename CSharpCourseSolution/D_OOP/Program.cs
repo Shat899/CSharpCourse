@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace D_OOP 
 {
     
@@ -7,18 +8,21 @@ namespace D_OOP
     {
         static void Main(string[] args) //void --> function doesn't return any value
         {                                            //"exmplare"
-            //Character c = new Character(); // Create an instance of Character class "exmplare"
+            Character c = new Character(); // Create an instance of Character class "exmplare"
             //c.Hit(10);                     // Call the Hit method on the Character instance
             //Console.WriteLine(c.Health);   // Print the current health of the character with property
 
             Calculator Calc = new Calculator();
             double area1 = Calc.CalcTriangleSquareby(ab:3, bc:4, ac:5);        // Call the method with named arguments
             double average1 = Calc.Average1(new int[] { 10, 20, 30, 40, 50 }); // Call the Average method where we pass an array of integers
-            double average2 = Calc.Average2(10, 20, 30, 40, 50);               // Call the Average method where we pass a variable number of integer arguments
+            double average2 = Calculator.Average2(10, 20, 30, 40, 50);         // Call the Average method where we pass a variable number of integer arguments
+                                                                               // Call Average2 with params keyword without creating instance of Calculator class
+
             bool tryDivideResult = Calc.TryDivide(10, 2, out double resault); // Call the TryDivide method with out parameter
-            Console.WriteLine(tryDivideResult); // Print whether the division was successful
-            Console.WriteLine(resault); // Print the result of the division
+            Console.WriteLine(tryDivideResult);                               // Print whether the division was successful
+            Console.WriteLine(resault);                                       // Print the result of the division
+
         }
 
-
-}   }
+    }
+}   

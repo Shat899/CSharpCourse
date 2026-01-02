@@ -9,7 +9,8 @@ namespace D_OOP
     // clas don't can by primitive type and protected
     public class Character
     {
-
+        
+        private static int speed= 10; // field / static field belongs to the class itself rather than to any specific instance of the class 
         private int health = 100; // field
 
         public int Health // declare property / property always start with uppercase letter / property usually used to access private fields
@@ -34,6 +35,16 @@ namespace D_OOP
         {                     //C# contns only methods, no functions / / functions are part of other languages / functions are similar to methods, but they are not associated with any class or object.
             health -= damage; // decrease health by damage
 
+        }
+
+        public int printSpeed() // method
+        {
+            return speed; // return the value of speed field
+        }
+
+        public void increaseSpeed() // method
+        {
+            speed += 10;
         }
 
     }
