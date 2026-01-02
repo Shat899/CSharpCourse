@@ -20,10 +20,18 @@ namespace D_OOP
             return 0.5 * b * h;
         }
 
-        public double CalcTriangleSquare(double ab, double ac, int alpha)             // method returns doble value, and cames with two parameters
+        public double CalcTriangleSquare(double ab, double ac, int alpha ,bool isInRadians = false)   // method returns doble value, and cames with two parameters / isInRadians has default value false optional parameter
         {
-            double radians = (Math.PI / 180) * alpha;
-            return 0.5 * ab * ac * Math.Sin(radians);
+            if (isInRadians)
+            {
+                return 0.5 * ab * ac * Math.Sin(alpha);
+            }
+            else
+            {
+                double radians = (Math.PI / 180) * alpha;
+                return 0.5 * ab * ac * Math.Sin(radians);
+            }
+
         }
 
         public double Average1(int[] numbers) // create a method that calculates the average of an array of integers
