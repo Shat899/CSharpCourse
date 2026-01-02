@@ -4,6 +4,7 @@ using System.Text;
 
 namespace D_OOP
 {
+
     // Value types are typically stored in the stack memory, and when you assign one value type to another, a copy of the value is made.
     public struct PointVal // Define a struct 
     {
@@ -26,5 +27,12 @@ namespace D_OOP
             Console.WriteLine($"X = {X} Y = {Y}");
         }
     }
+    public struct EvilStruct
+    {
+        public int X;
+        public int Y;
+
+        public PointRef PointRef; // Struct containing a reference type
+    }
+
 }
-    

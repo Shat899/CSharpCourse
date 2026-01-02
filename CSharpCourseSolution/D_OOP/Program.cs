@@ -23,7 +23,6 @@ namespace D_OOP
             Console.WriteLine(resault);                                       // Print the result of the division
 
             // Value types is stored in stack memory and reference types is stored in heap memory
-
             PointVal a1; // Creating value type instance
             a1.X = 3;
             a1.Y = 5;
@@ -43,6 +42,16 @@ namespace D_OOP
             b2.Y = 10;
             b1.LongValues();
             b2.LongValues();
+
+            EvilStruct es1 = new EvilStruct();
+            es1.PointRef = new PointRef() { X = 1, Y = 2 }; // Object initializer syntax to set properties
+            EvilStruct es2 = es1;                           // Copying the struct
+
+            Console.WriteLine($"X = {es1.PointRef.X} Y = {es1.PointRef.Y}");
+            Console.WriteLine($"X = {es2.PointRef.X} Y = {es2.PointRef.Y}");
+
+            // structs are value types, so modifying es2.PointRef will affect es1.PointRef because both es1 and es2 contain a reference to the same PointRef object
+
         }
 
     }
