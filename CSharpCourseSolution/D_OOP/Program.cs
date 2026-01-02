@@ -22,6 +22,27 @@ namespace D_OOP
             Console.WriteLine(tryDivideResult);                               // Print whether the division was successful
             Console.WriteLine(resault);                                       // Print the result of the division
 
+            // Value types is stored in stack memory and reference types is stored in heap memory
+
+            PointVal a1; // Creating value type instance
+            a1.X = 3;
+            a1.Y = 5;
+            PointVal a2 = a1; // Copying value type
+            a2.X = 7;
+            a2.Y = 10;
+            a1.LongValues();
+            a2.LongValues();
+
+
+
+            PointRef b1 = new PointRef(); // Creating reference type instance
+            b1.X = 3;
+            b1.Y = 5;
+            PointRef b2 = b1; // Copying reference type
+            b2.X = 7;
+            b2.Y = 10;
+            b1.LongValues();
+            b2.LongValues();
         }
 
     }
